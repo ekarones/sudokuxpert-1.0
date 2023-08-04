@@ -5,7 +5,7 @@ from ortools.sat.python import cp_model
 
 app = Flask(__name__)
 app.secret_key = 'my_super_secret_key'
-
+app.config['PROJECT_HOST'] = "https://sudokuxpert-10-production.up.railway.app/"
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
