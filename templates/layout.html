@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+    <link rel="icon" type="image/svg+xml" href="{{url_for('static',filename='img/favicon.svg')}}" />
+    <title>SudokuXpert</title>
+  </head>
+  <body>
+    <h4>* Aplicacion creada por Erick Wilson Aronés Garcilazo 2023 *</h4>
+    <h2>SudokuXpert</h2>
+    <h4>
+      ¿Te has enfrentado alguna vez a un Sudoku que parece imposible de resolver? ¡No te preocupes! He desarrollado la herramienta perfecta para ti: SudokuXpert, una aplicación web
+      inteligente y poderosa que resolverá cualquier rompecabezas de Sudoku en un abrir y cerrar de ojos.
+    </h4>
+    <h5><i class="bx bxs-info-square"></i> Primero inserta los números en las cuadrillas del Sudoku, luego presiona el botón de color verde para mostrar la solución </h5>
+
+    <div>
+      <form id="sudoku-form" action="/" method="post">
+        <div class="sudoku">
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell2" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+          <input type="number" min="1" max="9" step="1" value="" class="cell" name="cell" />
+        </div>
+        <div class="div__btns">
+          <button type="submit" id="submit-btn"><i class="bx bx-check-square"></i>Listo</button>
+          <button type="reset"><i class="bx bx-trash"></i>Limpiar</button>
+        </div>
+      </form>
+    </div>
+    {% block content %} {% endblock %}
+  </body>
+</html>

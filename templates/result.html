@@ -1,0 +1,31 @@
+{% extends "layout.html" %} {% block content %}
+<div>
+  <h3>Resultado del Sudoku</h3>
+  <div class="div__result">
+    <div>
+      <table>
+        {% for row in matrix_o %}
+        <tr>
+          {% for cell in row %}
+          <td>{{ '.' if cell == 0 else cell }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+      <h4>Original</h4>
+    </div>
+    <div>
+      <table>
+        {% for row in matrix %}
+        <tr>
+          {% for cell in row %}
+          <td>{{ cell if cell != 0 else '' }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </table>
+      <h4>Solución</h4>
+    </div>
+  </div>
+</div>
+{% endblock %}
