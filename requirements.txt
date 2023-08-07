@@ -11,5 +11,5 @@ numpy==1.24.4
 ortools==9.6.2534
 packaging==23.1
 protobuf==4.23.4
-scipy==1.11.1
+scipy==1.10.1
 Werkzeug==2.3.6
